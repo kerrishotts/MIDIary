@@ -59,6 +59,7 @@
 		6A58D3DF27C46602006AC419 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58D3E327C46602006AC419 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		6A58D3E527C46602006AC419 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		6A9F0F5928A9959500F3DA50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AA492EF28A7F7E9008DB46D /* MIDIary--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MIDIary--iOS--Info.plist"; sourceTree = "<group>"; };
 		6ADE6F9C27DE954C00235551 /* midi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = midi.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -109,6 +110,7 @@
 		6A58D3B627C46601006AC419 = {
 			isa = PBXGroup;
 			children = (
+				6A9F0F5928A9959500F3DA50 /* README.md */,
 				6AA492EF28A7F7E9008DB46D /* MIDIary--iOS--Info.plist */,
 				6A58D3BB27C46601006AC419 /* Shared */,
 				6A58D3CD27C46601006AC419 /* macOS */,
