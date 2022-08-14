@@ -21,6 +21,10 @@
 		6A58D3EE27C46602006AC419 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A58D3C027C46601006AC419 /* Persistence.swift */; };
 		6A58D3EF27C46602006AC419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A58D3C127C46601006AC419 /* Assets.xcassets */; };
 		6A58D3F027C46602006AC419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A58D3C127C46601006AC419 /* Assets.xcassets */; };
+		6ADE6F9427DE94F400235551 /* MIDIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6ADE6F9327DE94F400235551 /* MIDIKit */; };
+		6ADE6F9627DE950100235551 /* MIDIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6ADE6F9527DE950100235551 /* MIDIKit */; };
+		6ADE6F9927DE951F00235551 /* MIDIKitSMF in Frameworks */ = {isa = PBXBuildFile; productRef = 6ADE6F9827DE951F00235551 /* MIDIKitSMF */; };
+		6ADE6F9B27DE952900235551 /* MIDIKitSMF in Frameworks */ = {isa = PBXBuildFile; productRef = 6ADE6F9A27DE952900235551 /* MIDIKitSMF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,8 @@
 		6A58D3DF27C46602006AC419 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A58D3E327C46602006AC419 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		6A58D3E527C46602006AC419 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		6AA492EF28A7F7E9008DB46D /* MIDIary--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MIDIary--iOS--Info.plist"; sourceTree = "<group>"; };
+		6ADE6F9C27DE954C00235551 /* midi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = midi.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADE6F9927DE951F00235551 /* MIDIKitSMF in Frameworks */,
+				6ADE6F9427DE94F400235551 /* MIDIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADE6F9B27DE952900235551 /* MIDIKitSMF in Frameworks */,
+				6ADE6F9627DE950100235551 /* MIDIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,14 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A519E8D27DAEBE300948980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A58D3B627C46601006AC419 = {
 			isa = PBXGroup;
 			children = (
+				6AA492EF28A7F7E9008DB46D /* MIDIary--iOS--Info.plist */,
 				6A58D3BB27C46601006AC419 /* Shared */,
 				6A58D3CD27C46601006AC419 /* macOS */,
 				6A58D3D627C46601006AC419 /* Tests iOS */,
 				6A58D3E227C46602006AC419 /* Tests macOS */,
 				6A58D3C727C46601006AC419 /* Products */,
+				6A519E8D27DAEBE300948980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +145,7 @@
 		6A58D3CD27C46601006AC419 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				6ADE6F9C27DE954C00235551 /* midi.playground */,
 				6A58D3CE27C46601006AC419 /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -165,6 +185,10 @@
 			dependencies = (
 			);
 			name = "MIDIary (iOS)";
+			packageProductDependencies = (
+				6ADE6F9327DE94F400235551 /* MIDIKit */,
+				6ADE6F9827DE951F00235551 /* MIDIKitSMF */,
+			);
 			productName = "MIDIary (iOS)";
 			productReference = 6A58D3C627C46601006AC419 /* MIDIary.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +206,10 @@
 			dependencies = (
 			);
 			name = "MIDIary (macOS)";
+			packageProductDependencies = (
+				6ADE6F9527DE950100235551 /* MIDIKit */,
+				6ADE6F9A27DE952900235551 /* MIDIKitSMF */,
+			);
 			productName = "MIDIary (macOS)";
 			productReference = 6A58D3CC27C46601006AC419 /* MIDIary.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +285,10 @@
 				Base,
 			);
 			mainGroup = 6A58D3B627C46601006AC419;
+			packageReferences = (
+				6ADE6F9227DE94F400235551 /* XCRemoteSwiftPackageReference "MIDIKit" */,
+				6ADE6F9727DE951F00235551 /* XCRemoteSwiftPackageReference "MIDIKitSMF" */,
+			);
 			productRefGroup = 6A58D3C727C46601006AC419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -480,6 +512,7 @@
 				DEVELOPMENT_TEAM = Y3G92HH8YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MIDIary--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -510,6 +543,7 @@
 				DEVELOPMENT_TEAM = Y3G92HH8YD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MIDIary--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -715,6 +749,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6ADE6F9227DE94F400235551 /* XCRemoteSwiftPackageReference "MIDIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MIDIKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+		6ADE6F9727DE951F00235551 /* XCRemoteSwiftPackageReference "MIDIKitSMF" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MIDIKitSMF";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6ADE6F9327DE94F400235551 /* MIDIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ADE6F9227DE94F400235551 /* XCRemoteSwiftPackageReference "MIDIKit" */;
+			productName = MIDIKit;
+		};
+		6ADE6F9527DE950100235551 /* MIDIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ADE6F9227DE94F400235551 /* XCRemoteSwiftPackageReference "MIDIKit" */;
+			productName = MIDIKit;
+		};
+		6ADE6F9827DE951F00235551 /* MIDIKitSMF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ADE6F9727DE951F00235551 /* XCRemoteSwiftPackageReference "MIDIKitSMF" */;
+			productName = MIDIKitSMF;
+		};
+		6ADE6F9A27DE952900235551 /* MIDIKitSMF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6ADE6F9727DE951F00235551 /* XCRemoteSwiftPackageReference "MIDIKitSMF" */;
+			productName = MIDIKitSMF;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6A58D3BC27C46601006AC419 /* MIDIary.xcdatamodeld */ = {
