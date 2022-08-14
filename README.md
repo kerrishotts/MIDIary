@@ -6,18 +6,18 @@ I find it most useful for recording my piano practice sessions without explicitl
 
 ## Backlog
 
--[ ] Select custom MIDI IN and OUT endpoints
--[ ] Show MIDI as a piano roll in UI (Maybe w/ AudioKit?)
--[ ] Enable MIDI playback in UI
--[ ] Prettier UI
--[ ] BUG: When switching between size classes, the sidebar doesn't always allow navigation. https://stackoverflow.com/questions/63552716/how-to-run-the-split-view-on-ipad-using-swiftui seems useful here?
--[ ] BUG: Doesn't record when backgrounded
--[ ] Add "Stay Awake" option
--[ ] Add settings for Time Signature and Tempo (currently 4/4 and 120QBPM)
--[ ] Add metronome?
--[ ] Indicate which performance is actively recording
--[ ] Practice Stats & Reports?
--[ ] Practice Notes?
+- [ ] Select custom MIDI IN and OUT endpoints
+- [ ] Show MIDI as a piano roll in UI (Maybe w/ AudioKit?)
+- [ ] Enable MIDI playback in UI
+- [ ] Prettier UI
+- [ ] BUG: When switching between size classes, the sidebar doesn't always allow navigation. https://stackoverflow.com/questions/63552716/how-to-run-the-split-view-on-ipad-using-swiftui seems useful here?
+- [ ] BUG: Doesn't record when backgrounded
+- [ ] Add "Stay Awake" option
+- [ ] Add settings for Time Signature and Tempo (currently 4/4 and 120QBPM)
+- [ ] Add metronome?
+- [ ] Indicate which performance is actively recording
+- [ ] Practice Stats & Reports?
+- [ ] Practice Notes?
 
 ## Dependencies
 
